@@ -1,7 +1,7 @@
 Como atualizar
 
 
-coloca na pasta /home/deploy/whazing
+coloca o arquivo whazing.zip na pasta /home/deploy/whazing
 No terminal
 ```bash
 su deploy
