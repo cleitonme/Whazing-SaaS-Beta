@@ -44,6 +44,7 @@ Importante: Sempre usar usuario deploy nao esquece
 
 Versão: 2.5.0 BETA
 
+- bug - TypeBot e outras integrações aciona quando envia mensagem fora da prataforma
 - bug - revisado opção deletar empresa para evitar erros
 - bug - retornar ticket para fila limpa usuario
 - bug - painel atendimento não mostra mais tickets fechados
