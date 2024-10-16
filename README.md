@@ -44,4 +44,6 @@ Importante: Sempre usar usuario deploy nao esquece
 
 Versão: 2.6.0 BETA
 
-- Suporte facebook e instagram via hub (função exclusiva versão premium)
+- Suporte facebook e instagram  e WebChat via hub (função exclusiva versão premium)
+- Melhorias de segurança socket
+- Respeitar delay Typebot
