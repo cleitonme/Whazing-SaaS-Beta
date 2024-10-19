@@ -42,9 +42,4 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-Versão: 2.6.0 BETA
-
-- Suporte facebook e instagram  e WebChat via hub (função exclusiva versão premium)
-- Melhorias de segurança socket
-- Respeitar delay Typebot
-- Deletar um canal definitivamente agora, antes somente ocultava conexão
+atualmente nao tem beta para teste
