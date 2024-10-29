@@ -42,4 +42,17 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-atualmente nao tem beta para teste
+Versão 2.7.0 beta
+
+- bug - Mensagem vindas de story não chegava
+- bug - conversas 2 empresas diferentes na mesma instalação não confirmava envio da mensagem
+- Kanban (somente versão premium)
+- Cadastro contato mais facil seleção pais vem brasil padrão não prescisa colocar 55
+- Embelezamento numero telefone exibir br no lugar 55 e formatar numero
+- Ao tentar abrir ticket caso já exista mostra nome do usuario ou fila para facilitar localização
+- ChatFlow interno agora aceita transcrição de audio e reconhece caso cliente envie um arquivo
+- Mudança 2 empresas diferentes podem usar mesmo nome de whatsapp
+- Proporção videos e imagens tela chat melhorado a vizualização
+- Melhoria notificações chat interno
+- Configuração para desativar notificações de grupos
+- Opção Reabrir tickets anteriores ao receber novas mensagens (Com essa opção ativada caso já exista ticket fechada ele vai abrir ele novamente e não criar um ticket novo.)
