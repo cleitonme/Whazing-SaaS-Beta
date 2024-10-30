@@ -45,6 +45,7 @@ Importante: Sempre usar usuario deploy nao esquece
 Versão 2.7.0 beta
 
 - bug - Mensagem vindas de story não chegava
+- bug - Cadastro HUB respeitar limite de canais
 - bug - conversas 2 empresas diferentes na mesma instalação não confirmava envio da mensagem
 - Kanban (somente versão premium)
 - Cadastro contato mais facil seleção pais vem brasil padrão não prescisa colocar 55
