@@ -42,8 +42,9 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-Versão 2.7.0 beta
+Versão 2.7.1 beta
 
+- bug - Configuração alterava de outras empresas com usuario SAAS
 - bug - Mensagem vindas de story não chegava
 - bug - Cadastro HUB respeitar limite de canais
 - bug - conversas 2 empresas diferentes na mesma instalação não confirmava envio da mensagem
@@ -57,3 +58,7 @@ Versão 2.7.0 beta
 - Melhoria notificações chat interno
 - Configuração para desativar notificações de grupos
 - Opção Reabrir tickets anteriores ao receber novas mensagens (Com essa opção ativada caso já exista ticket fechada ele vai abrir ele novamente e não criar um ticket novo.)
+- Opção para selecionar tambem nas opção fechar e apagar ticket em Massa
+- Opção deletar ticket individual na tela de atendimento( somente aparece admin)
+- Baixar conversa - Ticket em PDF
+- Colocado botão chamar whatsapp de suporte em pontos estrategicos(Tela inicial, tela solicitar teste, sesão whatsapp, financeiro, integrações e bot)
