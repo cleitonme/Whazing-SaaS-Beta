@@ -42,8 +42,11 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-Versão 2.7.1 beta
+Versão 2.7.2 beta
 
+- bug - Consultar log de ticket
+- bug - espiar ticket
+- bug - Opção resolver ticket sem prescisar abrir ele
 - bug - Configuração alterava de outras empresas com usuario SAAS
 - bug - Mensagem vindas de story não chegava
 - bug - Cadastro HUB respeitar limite de canais
@@ -62,3 +65,5 @@ Versão 2.7.1 beta
 - Opção deletar ticket individual na tela de atendimento( somente aparece admin)
 - Baixar conversa - Ticket em PDF
 - Colocado botão chamar whatsapp de suporte em pontos estrategicos(Tela inicial, tela solicitar teste, sesão whatsapp, financeiro, integrações e bot)
+- Opção fechar ticket em massa e apagar foi mudada para dashboard
+- Alterado tamanho campo Editar Mensagem na tela de atendimento
