@@ -1,7 +1,9 @@
+Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
+
 Como atualizar
 
 
-coloca o arquivo whazing.zip na pasta /home/deploy/whazing
+coloca o arquivo whazing.zip da versão beta na pasta /home/deploy/whazing
 No terminal
 ```bash
 su deploy
