@@ -44,8 +44,10 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-Versão 2.7.2 beta
+Versão 2.7.3 beta
 
+- bug - Mensagem duplicando chat interno
+- bug - Chat interno depois de um certo numero de mensagens parava de listar
 - bug - Consultar log de ticket
 - bug - espiar ticket
 - bug - Opção resolver ticket sem prescisar abrir ele
@@ -69,3 +71,4 @@ Versão 2.7.2 beta
 - Colocado botão chamar whatsapp de suporte em pontos estrategicos(Tela inicial, tela solicitar teste, sesão whatsapp, financeiro, integrações e bot)
 - Opção fechar ticket em massa e apagar foi mudada para dashboard
 - Alterado tamanho campo Editar Mensagem na tela de atendimento
+- Possibilidade alterar timezone pelo .env verificar arquivo example
