@@ -72,3 +72,4 @@ Versão 2.7.3 beta
 - Opção fechar ticket em massa e apagar foi mudada para dashboard
 - Alterado tamanho campo Editar Mensagem na tela de atendimento
 - Possibilidade alterar timezone pelo .env verificar arquivo example
+- Trocada versao Baileys para usada pelo evolution
