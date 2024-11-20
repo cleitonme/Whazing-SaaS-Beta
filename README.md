@@ -48,6 +48,7 @@ Versão 2.7.4 beta
 
 ############### INTEGRAÇÕES SOMENTE PARA VERSÃO PREMIUM ###################
 
+- bug - importar historico de mensagem
 - bug - tela atendimento modo celular não abre Dados de contato
 - bug - Aumentado timeout para envio arquivos maiores edição de mensagens rapidas
 - bug - Arquivos enviados pelo typebot não era exibidos corretamente no frontend
