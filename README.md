@@ -60,7 +60,7 @@ Versão 2.7.4 beta
 - Update versão varios pacotes como sequelize e outros
 - Opção separada da quantidade tickets abertos e pedentes que carrega tela atendimento
 - Permiti abrir ticket em conexão diferente para mesmo contato
-- Suporte "intagram v2" do Hub notificame
+- Suporte "instagram v2" do Hub notificame
 - Opção Ignorar contato
 - Maximo de usuarios e conexões vai respeitar o que esta no plano foi tirado da empresa
 - Planos com opção para desativar acesso campanhas, integrações e grupos
