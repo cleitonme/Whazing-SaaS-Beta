@@ -44,9 +44,23 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
-Versão 2.7.4 beta
+Versão 2.7.5 beta
 
-############### INTEGRAÇÕES SOMENTE PARA VERSÃO PREMIUM ###################
+### Teve varias mudanças no kanban verificar configuração ####
+
+- bug - problema formatação numeros causando erros conexoes hub - já que são contatos sem numeros
+- Filtro na tela de agendamento pela data que foi agendado
+- Chat interno aceita colar print no input
+- Filtro LANE de contatos no KANBAN
+- Edição lane kanban direto no contato
+- Edição lane kanban direto na tela de antendimento
+- Nas configurações tem 3 opções novas kanban uma para mostrar contatos tickets fechados, outra mostrar contatos sem fila atribuida e para deixar lanes ser compartilhados entre os usuarios e somente admin pode criar, editar e apagar lista de lanes.
+- Tela atendimento mostra descrição informações adicionais tambem
+- Tela atendimento mostra Valor negociação caso ela exista
+- Opção "Reabrir tickets anteriores" alterada quando for criar ticket pela aba contatos tambem vai buscar tickets anteriores e reabre o mesmo
+
+
+Versão 2.7.4 beta
 
 - bug - importar historico de mensagem
 - bug - tela atendimento modo celular não abre Dados de contato
