@@ -44,6 +44,18 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.7.6 beta
+- Bug versao beta - Campanha erro adicionar contatos
+- Bug versão free - Listas filas nao atualizava corretamente versão free
+- Bug - Contatos sem numeros fazendo da erro campanhas e outros relatorios
+- Bug - Mais uma alteração filtros lista de atendimento para ver se melhora comportamento(não retornava ticket sem fila e atribuido ao usuario)
+- Bug - Melhorias formatação textos vindo Typebot
+- Delay 10s enceramento ticket pelo chatbot para garantir mensagem de enceramento seja entregue antes de fechar ticket
+- Opção selecionar usuario online e offline hoje não tem uma utilidade decidir tirar para futuro talvez usar ela para alguma coisa util
+- Mudança de cores padrões pelo painel SaaS
+- Campanhas podem ser deletadas qualquer momento retirado validações
+- Configuração para whazing não baixar mensagens que você envia por fora da prataforma(exemplo disparo pelo wasender, se cliente responder vai abrir o ticket)
+
 Versão 2.7.5 beta
 
 ### Teve varias mudanças no kanban verificar configuração ####
