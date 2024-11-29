@@ -44,6 +44,10 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.7.6.1 beta
+- Bug - Erro alterar usuario comum
+- Bug - Melhoria geração pdf com conversas agora exibi emoticons(obs: deixou processo mais lento gerar pdf)
+
 Versão 2.7.6 beta
 - Bug versao beta - Campanha erro adicionar contatos
 - Bug versão free - Listas filas nao atualizava corretamente versão free
