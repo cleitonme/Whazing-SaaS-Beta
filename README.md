@@ -44,6 +44,11 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.7.6.2 beta
+- bug - notificação somando tickets fechados - filtro tickets status nao tava funcionando
+- Bug da beta - Listagem erradas de tickets ainda
+ - Validação para iniciar ticket pelos contatos evitar erro sem fila
+
 Versão 2.7.6.1 beta
 - Bug - Erro alterar usuario comum
 - Bug - Melhoria geração pdf com conversas agora exibi emoticons(obs: deixou processo mais lento gerar pdf)
