@@ -44,6 +44,10 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.7.6.4 beta
+- Separei busca tem campo novo buscar mensagens.. Busca contato junto mensagem não tava boa quando tem muita mensagem fica muito lenta
+- Correção botão tela mensagem se mexer mouse ia canto tela
+
 Versão 2.7.6.3 beta
 - bug - Importar mensagem nao acionar bot interno e nem horario de atendimento
 
