@@ -44,7 +44,11 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.7.6.3 beta
+- bug - Importar mensagem nao acionar bot interno e nem horario de atendimento
+
 Versão 2.7.6.2 beta
+- bug grave - Faz serviço travar caso excluir um usuario que esteja logado em algum local
 - bug - notificação somando tickets fechados - filtro tickets status nao tava funcionando
 - Bug da beta - Listagem erradas de tickets ainda
  - Validação para iniciar ticket pelos contatos evitar erro sem fila
