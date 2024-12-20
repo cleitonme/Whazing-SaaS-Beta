@@ -44,6 +44,17 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+Versão 2.8.1 beta
+- bug - Resolver atendimento sem interação automaticamente - Fecha somente se ultima mensagem for do atendente
+- Transferir atendimento para ChatBot (Recurso Premium)
+- Nova integração - Emissão segunda via boleto Asaas - No transferir para fila ta integração você deve colocar mensagem solicitando cpf ou cnpj do cliente que bot estara aguardando essa informação
+- Sistema de fila para envio e recebimento mensagem(em teste)
+- Possibilidade acessar tarefas da fila. BullBoard - Verificar .env.example
+- Configuração timeout para importação mensagens - Verificar .env.example
+- Mudanças timeout socket
+- Listar somente chatbot ativos na tela dos canais
+- Aumentando tempo recarregar pagina
+
 Versão 2.8.0 beta
 
 - Geração PDF passa ser Recurso Premium
