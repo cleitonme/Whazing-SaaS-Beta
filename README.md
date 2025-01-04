@@ -44,6 +44,27 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
+--- Atenção quem usa plano 1 ele não vai mais exibir no painel nessa versão, deixe esse plano somente para empresa super ---
+
+Versão 2.8.2 beta
+- Correção alguns bugs criados na beta com sistema de filas
+- Retirado exibição plano 1 para não causar mais confusão
+- Remoção linkpreview
+- Validação input para não conseguir da varios enter enviar varias vezes mensagem repetidas
+- Ajustes para aparecer botao zoom nas imagens
+- Opção reabrir ticket aparecer modo mobile
+- Somente marca mensagens como lidas se ticket estiver aberto
+- Criada função desativa automaticamente mensagens temporarias whatsapp(evitar aquele i lado mensagem da impressão sistema tem erro)
+- Mensagem editada foi invertida campos(mensagens antigas vai aparecer ao contrario)
+- Bot funciona se tiver usuario atribuido no canal tambem agora
+- Opção ocultar tickets no chatbot corrigida
+- Suporte exibir se mensagem foi encaminhada, ao encaminhar exibi informação tambem
+- Fechamento automatico de ticket passar ser por canal
+- Mensagens enviadas pela api, caso ticket seja aberto pela api ele se fecha automaticamente
+- Alterar dados empresa vai deletar invoices em aberto para evitar problemas caso alteração do plano
+- Integração somente n8n vai funcionar em grupos
+- Automações como "mensagens boas vindas, avaliacao, mensagem de encerramento, mensagem transferir ticket" tambem foi tirada dos grupos
+
 Versão 2.8.1 beta
 - bug - Resolver atendimento sem interação automaticamente - Fecha somente se ultima mensagem for do atendente
 - Transferir atendimento para ChatBot (Recurso Premium)
