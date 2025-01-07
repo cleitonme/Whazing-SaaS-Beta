@@ -47,6 +47,7 @@ Importante: Sempre usar usuario deploy nao esquece
 --- Atenção quem usa plano 1 ele não vai mais exibir no painel nessa versão, deixe esse plano somente para empresa super ---
 
 Versão 2.8.2 beta
+- bug beta - emiti atualizacao ack grupos
 - bug - correção exibição modo dark tela login
 - bug - filtro data tela contatos da campanha
 - Correção alguns bugs criados na beta com sistema de filas
