@@ -44,7 +44,21 @@ npm run build
 
 Importante: Sempre usar usuario deploy nao esquece
 
---- Atenção quem usa plano 1 ele não vai mais exibir no painel nessa versão, deixe esse plano somente para empresa super ---
+--- Atenção - quem usa plano 1 ele não vai mais exibir no painel nessa versão, deixe esse plano somente para empresa super ---
+
+--- Ateção 2 - mensagens rapidas passa ser por usuario e tem opcao nova Mostrar para todos para administrador se quiser criar uma comum para todos
+
+Versão 2.8.3 beta
+- bug beta - mensagem deletada deletar realmente
+- bug - edição grupos chat interno
+- bug - alteração exibição grupos chat interno para modo dark mostra nome do usuario
+- Mensagens rapidas separada por usuario cada um tem as suas
+- Periodo importação limitado 30 dias
+- Troca versão lib audio novamente para testar
+- Novas versões sons notificações, para quem preferir os antigos estao na pasta ainda
+- Update de segurança com camada extra de validaçães no backend de usuarios
+- Escondido botões na tela kanban tambem para não atrapalhar
+
 
 Versão 2.8.2 beta
 - bug beta - relatorio etiquetas
