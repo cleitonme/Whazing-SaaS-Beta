@@ -46,13 +46,13 @@ Importante: Sempre usar usuario deploy nao esquece
 
 --- Atenção - quem usa plano 1 ele não vai mais exibir no painel nessa versão, deixe esse plano somente para empresa super ---
 
---- Ateção 2 - mensagens rapidas passa ser por usuario e tem opcao nova Mostrar para todos para administrador se quiser criar uma comum para todos
+--- Atenção 2 - mensagens rapidas passa ser por usuario e tem opcao nova Mostrar para todos para administrador se quiser criar uma comum para todos
 
---- Ateção 3 - Transcrição de audio passa ser recurso exclusivo da versão Premium
+--- Atenção 3 - Transcrição de audio passa ser recurso exclusivo da versão Premium
 
---- Ateção 4 - Avaliação de atendimento passa ser recurso exclusivo da versão Premium
+--- Atenção 4 - Avaliação de atendimento passa ser recurso exclusivo da versão Premium
 
---- Ateção 5 - Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
+--- Atenção 5 - Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
 
 Versão 2.8.4 beta
 
