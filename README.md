@@ -48,6 +48,28 @@ Importante: Sempre usar usuario deploy nao esquece
 
 --- Ateção 2 - mensagens rapidas passa ser por usuario e tem opcao nova Mostrar para todos para administrador se quiser criar uma comum para todos
 
+--- Ateção 3 - Transcrição de audio passa ser recurso exclusivo da versão Premium
+
+--- Ateção 4 - Avaliação de atendimento passa ser recurso exclusivo da versão Premium
+
+--- Ateção 5 - Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
+
+Versão 2.8.4 beta
+
+Transcrição de audio passa ser recurso exclusivo da versão Premium
+Avaliação de atendimento passa ser recurso exclusivo da versão Premium
+Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
+
+- bug beta - correção update tarefa deslogar usuario comum
+- Dash novo chart mostra horarios picos de tickets. Ele considera hora ticket foi criado e soma. Serve para saber horario quem tem mais tickets novos.
+- Dash novo chart atendimento por usuario - grafico pizza esse conta fechados estatistica gerais
+- Dash novo chart atendimento por usuario - grafico barras esse tickets abertos - ao vivo não considera filtro datas
+- Dash novo chart atendimento por status ao vivo - grafico pizza - ao vivo não considera filtro datas
+- Nova Opção para enviar mensagem ao cliente caso ele envie audio falando que não aceita mensagens de audio
+- Nova opção para enviar a transcrição de audio como resposta
+- Enviar via Api mensagens para grupos
+- Novo Webhook no canal
+
 Versão 2.8.3 beta
 - bug beta - mensagem deletada deletar realmente
 - bug - edição grupos chat interno
