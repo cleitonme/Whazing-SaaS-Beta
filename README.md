@@ -69,6 +69,7 @@ Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
 - Nova opção para enviar a transcrição de audio como resposta
 - Enviar via Api mensagens para grupos
 - Novo Webhook no canal
+- Enviar legenda em print colado direto tela atendimento
 
 Versão 2.8.3 beta
 - bug beta - mensagem deletada deletar realmente
