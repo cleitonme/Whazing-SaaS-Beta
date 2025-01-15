@@ -54,6 +54,15 @@ Importante: Sempre usar usuario deploy nao esquece
 
 --- Atenção 5 - Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
 
+Versão 2.8.5 beta
+- Bug - não deletava mensagem rapida criada por outro usuario
+- Troquei versão baileys para ver se para esse bug desconexão
+- Enviar legenda em print colado direto tela atendimento
+- Lista tickets coloquei limitação caracteres nao ficar saindo fora
+- Relatorio tickets foi colocado link ir para ticket
+- trocado textarea mensagem não aceita audio
+
+
 Versão 2.8.4 beta
 
 Transcrição de audio passa ser recurso exclusivo da versão Premium
@@ -69,7 +78,6 @@ Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
 - Nova opção para enviar a transcrição de audio como resposta
 - Enviar via Api mensagens para grupos
 - Novo Webhook no canal
-- Enviar legenda em print colado direto tela atendimento
 
 Versão 2.8.3 beta
 - bug beta - mensagem deletada deletar realmente
