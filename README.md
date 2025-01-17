@@ -52,7 +52,28 @@ Importante: Sempre usar usuario deploy nao esquece
 
 --- Atenção 4 - Avaliação de atendimento passa ser recurso exclusivo da versão Premium
 
---- Atenção 5 - Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
+--- Atenção 5 - Campanhas e agendamentos na versão free ele adiciona na mensagem "Enviado usando whazing.com.br "
+
+Versão 2.8.6 beta
+
+
+Agendamentos na versão free ele adiciona na mensagem "Enviado usando whazing.com.br"
+Tarefas passa ser recurso exclusivo da versão Premium
+
+- Bug - alterada logica mensagem despedida para ver se para reabrir ticket
+- Bug - Corrigido alguns erros de digitação
+- Tela protocolos tem aquele botão abre chat com lista mensagens
+- WhiteLabel foi colocado tamanho recomendado imagens e formato
+- Tela anotações ticket tem aquele botão abre chat com lista mensagens
+- Dashboard foi alterado termos para ver se fica melhor explicativo
+- Função fecha tickets inativos chat interno agora fecha caso ticket tenha fila ou usuario atribuido
+- Tela canal foi colocado mostrar numero conectado para melhor identificação
+- Ao criar anotação aparece tela mensagens tambem como nota interna para melhor identificação no ticket
+- Ao encaminhar mensagem agora modal se fecha sozinho
+- Notificações tela atendimento colocadas topo para não atrapalhar o input
+- Ao reabrir ticket ele ja carrega tela de mensagens
+- Tela ajuda colocado posibilidade substituir videos por iframe de algum site
+- Lista empresas caso esteja vencida muda vermelho vencimento
 
 Versão 2.8.5 beta
 - Bug - não deletava mensagem rapida criada por outro usuario
@@ -67,7 +88,7 @@ Versão 2.8.4 beta
 
 Transcrição de audio passa ser recurso exclusivo da versão Premium
 Avaliação de atendimento passa ser recurso exclusivo da versão Premium
-Campanhas na versão free ele adiciona na mensagem "Enviado via Whazing"
+Campanhas na versão free ele adiciona na mensagem "Enviado usando whazing.com.br "
 
 - bug beta - correção update tarefa deslogar usuario comum
 - Dash novo chart mostra horarios picos de tickets. Ele considera hora ticket foi criado e soma. Serve para saber horario quem tem mais tickets novos.
