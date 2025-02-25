@@ -133,6 +133,11 @@ Versão 2.8.12
 
 - Mudança badge notificação atendimento lista ticket com mensagens nao lidas abertos
 
+- Usuarios
+- Aviso já existe um cadastro com aquele email
+
+- Tarefas
+- Botão para vizualizar a tarefa completa
 
 Como atualizar
 
