@@ -1,5 +1,26 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.13
+
+- Mudança nos socket
+
+- Usuarios
+- Aviso já existe um cadastro com aquele email
+
+- Tarefas
+- Botão para vizualizar a tarefa completa
+
+- Atualização cores mais alguns botões para seguir tema. Acredito com esse não ficou pontos sem ajustes
+
+- Alteração mensagem Assas "Opss!!!!*\nNão localizamos nenhum boleto! Estamos transferindo para um *Atendente*!"
+
+- Adicionado suporte proxy tipo socks nas configuração conexão whatsapp e possivel .env para todos whatsapp
+
+- Chat interno
+- bug - permitir envio mais de um arquivo
+
+- Alterado logica rejeição chamadas
+
 Versão 2.8.12
 
 - Novo socket destina notificação mais especificas
@@ -132,12 +153,6 @@ Versão 2.8.12
 - Single Login - Não possivel logar 2 dispositivos mesmo tempo - Opcional desabilitar no usuario
 
 - Mudança badge notificação atendimento lista ticket com mensagens nao lidas abertos
-
-- Usuarios
-- Aviso já existe um cadastro com aquele email
-
-- Tarefas
-- Botão para vizualizar a tarefa completa
 
 Como atualizar
 
