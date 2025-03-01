@@ -134,7 +134,7 @@ Versão 2.8.12
 
 - Hub Instagram
 - Recebe comentarios na integração
-- Opção desativar receber comentários
+- Fechar automaticamente Tickets de comentárioss
 - Assinatura nao envia mais * negrito
 
 - Conexão Whatsapp
