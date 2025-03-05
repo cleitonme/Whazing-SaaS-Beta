@@ -1,5 +1,9 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.13 - 05/03/2025
+
+- Erro kanban compartilhado - cadastro novos não listando lanes
+
 Versão 2.8.13
 
 - Mudança nos socket
