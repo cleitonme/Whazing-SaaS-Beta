@@ -1,5 +1,9 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.13 - 07/03/2025
+
+- Erro CRM compartilhado - Exclusão de um contato de uma lane direto pela edição contatos não tava atualizando no crm
+
 Versão 2.8.13 - 05/03/2025
 
 - Erro CRM compartilhado - cadastro novos não listando lanes
