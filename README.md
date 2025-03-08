@@ -2,7 +2,8 @@ Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
 Versão 2.8.13 - 08/03/2025
 
-- Melhoria validação telefones sem  no whatsapp 9 envio mensagens api para evitar falsos envios
+- Melhoria validação telefones sem 9 no whatsapp envio mensagens api para evitar falsos envios
+- Removido filtro data adicionar campanha so dava confusãoS
 
 Versão 2.8.13 - 07/03/2025
 
