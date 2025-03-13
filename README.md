@@ -1,5 +1,15 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.13.1 - 12/03/2025
+
+- Novo sistema conversão audios enviados e recebidos backend - tentar economizar processador
+- Novo sistema download arquivos backend - tentar economizar processador
+- Envio whatsapp hub Instagram
+- Atualização edição chatbot - Descidi liberar antes
+- Troca versão alternativa baileys - pra ver se melhora algo - mas falta processamento é um grande problema - Mas tenho maquina 10 nucleos, nem toda empresa vps honesta e entrega realmente real, as vezes so são virtuais, e você compartilha nucleo com muitos usuarios.
+- Fechar ticket ele retira integração - possibilitando apagar integração futuramente
+- Listagem ticket pendente mostra foto - colocado botao aceitar e fechar ticket
+
 Versão 2.8.13 - 08/03/2025
 
 - Melhoria validação telefones sem 9 no whatsapp envio mensagens api para evitar falsos envios
