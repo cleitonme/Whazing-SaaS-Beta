@@ -1,5 +1,10 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.13.1 - 13/03/2025
+
+- Melhorias na validacao se usuario esta online
+- Alterada sistema ligação - não enviar mensagem não aceita chamada caso já tenha sido enviado ultimas 24 horas - vamos ver como se comporta
+
 Versão 2.8.13.1 - 12/03/2025
 
 - Novo sistema conversão audios enviados e recebidos backend - tentar economizar processador
