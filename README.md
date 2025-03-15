@@ -1,5 +1,13 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14
+
+- Telegram
+- Suporte integrações, chatbot interno, transcrição audio, avaliação
+
+- ChatBot interno
+- Receber arquivo bot recebe nome do arquivo 
+
 Versão 2.8.13.1 - 13/03/2025
 
 - Melhorias na validacao se usuario esta online
