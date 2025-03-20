@@ -1,5 +1,11 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14.1
+
+- Melhora sistemas mensagens, tentativa recuperar mensagens não compativeis
+- No Canal whatsapp nova opção - Ignorar Grupos(necessário reniciar conexão)
+- Webhook canal de ticket fechado - notifica quando fechado por inatividade
+
 Versão 2.8.14
 
 - Telegram
