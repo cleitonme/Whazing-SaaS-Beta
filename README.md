@@ -1,5 +1,16 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14.2
+
+- Suporte mensagem agendadas Grupos
+- Quebra linha chatinterno
+- Disable botao enviar Atendimento até acabar envio
+- Ajustes para melhor desempenho
+- Renomeado menu empresas para SaaS
+- Restriger exportar contatos somente para admin
+- Encaminhamento mensagem, garantir saiu mesmo whatsapp e criar ticket usar mesma fila ticket original
+- Enviar mensagem enter tela print
+
 Versão 2.8.14.1
 
 - Melhora sistemas mensagens, tentativa recuperar mensagens não compativeis
