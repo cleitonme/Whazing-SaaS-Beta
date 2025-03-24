@@ -4,6 +4,7 @@ Versão 2.8.14.3
  - integração simples wavoip para fazer chamadas somente
  - Ajustes dashboard by carlos eduardo
  - Aumentado limite envio arquivos 100MB e liberado enviar qualquer formato
+ - Relatorios tickets exibi etiquetas
 
 Versão 2.8.14.2
 
