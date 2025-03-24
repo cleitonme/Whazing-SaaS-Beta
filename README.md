@@ -1,5 +1,10 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14.3
+ - integração simples wavoip para fazer chamadas somente
+ - Ajustes dashboard by carlos eduardo
+ - Aumentado limite envio arquivos 100MB e liberado enviar qualquer formato
+
 Versão 2.8.14.2
 
 - Suporte mensagem agendadas Grupos
