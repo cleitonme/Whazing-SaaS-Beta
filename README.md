@@ -1,5 +1,8 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14.3 - 25/03/25
+- Melhoria cache mensagem enviada
+
 Versão 2.8.14.3
  - integração simples wavoip para fazer chamadas somente
  - Ajustes dashboard by carlos eduardo
