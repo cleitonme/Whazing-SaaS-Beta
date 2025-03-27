@@ -1,5 +1,9 @@
 Antes de continuar fazer backup/snapshot da vps. Vericar com empresa contratada
 
+Versão 2.8.14.4
+- bug - Correção filtro não exibir tickets no ChatBot
+- bug - Correção exibir valores a enviar da campanha
+
 Versão 2.8.14.3 - 25/03/25
 - Melhoria cache mensagem enviada
 
