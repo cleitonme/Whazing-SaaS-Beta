@@ -1,21 +1,29 @@
-# Modo fallback
+# Modo Fallback
 
-- Caso você usar api oficial com modelo ler qrcode mantem aplicativo teremos modo fallback ele tentara enviar usando wwjs
+Caso você esteja utilizando a API oficial (com leitura de QR Code e manutenção de sessão via aplicativo), o sistema contará com um **modo fallback**.  
+Se a mensagem falhar na API oficial, o sistema tentará reenviá-la usando o **wwebjs**.
 
-# Como vai funcionar
+---
 
-- Sistema tentara enviar via api oficial caso falhe vai altera para aquele x indicando falha
+## Como funciona
 
-![print](mensagemrejeitada.png)
+- O sistema tentará o envio pela **API oficial**.  
+Se falhar, o ícone mudará para um "X", indicando a rejeição da mensagem:
 
-- Se estiver configurado wwjs o sistema ira tentar enviar por ele caso consiga vai atualizar icone para globo indicando foi enviado pelo wwjs
+![Mensagem rejeitada](mensagemrejeitada.png)
 
+- Se o canal estiver configurado com o **wwebjs**, o sistema tentará o reenvio por ele.  
+Se for bem-sucedido, o ícone será atualizado para um **globo**, indicando que foi enviado via wwebjs:
 
-![print](wwjs.png)
+![Enviado via wwebjs](wwjs.png)
 
-# Como instalar o wwebjs-api
+---
 
-   ```bash
+## Como instalar a wwebjs-api
+
+Execute o comando abaixo para rodar a API em um container Docker:
+
+```bash
 docker run -d \
   --name wwebjs_api \
   -p 3500:3000 \
@@ -31,20 +39,21 @@ docker run -d \
   -e ENABLE_WEBHOOK=FALSE \
   -e PORT=3000 \
   avoylenko/wwebjs-api
-   ```
-   
--   No comando acima ficara disponivel na porta 3500 e api key "suaapikey", altere conforme necessário
+```
 
-- Caso queira atualizar imagem
+- A API ficará acessível na porta **3500** com a chave de acesso `suaapikey`.  
+Altere conforme necessário.
 
-   ```bash
-   # Puxar a última versão da imagem
+### Atualizando a imagem
+
+```bash
+# Puxar a versão mais recente
 docker pull avoylenko/wwebjs-api
 
 # Remover o container antigo
 docker rm -f wwebjs_api
 
-# Recriar o container com a imagem atualizada
+# Recriar com a nova imagem
 docker run -d \
   --name wwebjs_api \
   -p 3500:3000 \
@@ -60,27 +69,41 @@ docker run -d \
   -e ENABLE_WEBHOOK=FALSE \
   -e PORT=3000 \
   avoylenko/wwebjs-api
-      ```
-	  
-- Lembrando wwjs é api pesada pois usa navegaro vai ter consumo maior vps, dependendo caso pode instalar uma vps separada.
+```
 
-# Como configurar
+> ⚠️ Atenção: a wwebjs é uma API que utiliza navegador em segundo plano, então o consumo de recursos da VPS é maior.  
+Se necessário, considere rodá-la em uma VPS separada.
 
-- Acesse canais, clique no lapis edição canal
+---
 
-![print](canalconfig.png)
+## Como configurar
 
-- Onde você preencher url da api wwjs, serviço pode estar instalado mesmo servidor sendo assim somente indicando http://127.0.0.1:porta não prescisa abrir porta firewall ou servidor externo colocando ip do mesmo http://ip:porta e servidor externo tem que esta porta aberta para whazing poder acessar.
+1. Vá até **Canais** e clique no ícone de edição:
 
-- E API_KEY configurada na API
+![Edição de canal](canalconfig.png)
 
-- Caso estiver configurado corretamente vai aparecer botão novo, de f5 para atualizar pagina caso necessário
+2. Preencha a URL da API do wwebjs.  
+Se estiver rodando no mesmo servidor, use `http://127.0.0.1:porta`.  
+Se for um servidor externo, use `http://ip:porta` (a porta precisa estar aberta no firewall para acesso).
 
-![print](canal.png)
+3. Insira a mesma **API_KEY** configurada na API.
 
-- Você clica conectar para gerar conexão wwjs e depois vai aparecer botão qrcode wwebjs, caso apareça "QR Code não está pronto ou já foi escaneado" clique atualizar qr até aparecer codigo para leitura, após aparecer so ler qrcode no aplicativo na opção conectar whatsapp web.
-Caso sistema conectar pagina vai atualizar e botão vai aparecer desconectar wwejs indicando conexão está funcionando.
+4. Se configurado corretamente, um botão novo aparecerá.  
+Dê **F5** na página, se necessário, para atualizar.
 
-## aviso
+![Botão aparecerá](canal.png)
 
-Não abuse dessa opção para disparar spam pois seu whatsapp pode ser banido
+5. Clique em **Conectar** para iniciar a conexão.  
+Depois disso, aparecerá o botão para exibir o **QR Code**.
+
+Se aparecer a mensagem `"QR Code não está pronto ou já foi escaneado"`, clique em **Atualizar QR** até que o código apareça.  
+Com o QR na tela, basta escanear com o WhatsApp em "Conectar ao WhatsApp Web".
+
+Após conectar, a página será atualizada e o botão mudará para **Desconectar wwebjs**, indicando que está funcionando corretamente.
+
+---
+
+## Aviso ⚠️
+
+**Não utilize essa funcionalidade para envio em massa (spam).**  
+Seu número pode ser banido permanentemente pelo WhatsApp.
