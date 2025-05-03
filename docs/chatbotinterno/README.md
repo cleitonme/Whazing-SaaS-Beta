@@ -37,7 +37,7 @@ A configuração do fluxo do chatbot é feita através da interface visual abaix
 
 ![print](configfluxo.png)
 
-Na versão 2.9.0, você tem acesso às seguintes interações:
+Na versão 2.9.1, você tem acesso às seguintes interações:
 
 #### 1. Enviar Mensagem
 - Permite inserir o texto que será enviado ao cliente
@@ -46,34 +46,45 @@ Na versão 2.9.0, você tem acesso às seguintes interações:
 #### 2. Enviar Documentos, Vídeos, Áudios e Outros Arquivos
 - Funcionalidade dedicada para envio de arquivos diversos
 
-#### 3. Enviar Botões
+#### 3. Enviar figurinhas
+- Funcionalidade dedicada para envio de figurinhas qualquer imagem usada será convertida em uma figurinha
+
+#### 4. Enviar localização
+- Enviar localizacação para o contato somente funciona whatsapp api oficial ou baileys
+
+#### 5. Enviar Botões
 - Compativel com api oficial, facebook e instagram - máximo 3 botões
 
 ![print](botao.png)
 
-#### 4. Adicionar botão com Link
+#### 6. Adicionar botão com Link
 - Compativel com api oficial
 
 ![print](links.png)
 
-#### 5. Adicionar lista
+#### 7. Adicionar lista
 - Compativel com api oficial
 
 ![print](lista.png)
 
 ![print](lista2.png)
 
-#### 6. Adicionar Delay
+#### 8. Solicitar localização - somente api oficial
+- Envia botão pedindo para cliente localizacação dele, util serviços de entrega por exemplo
+
+![print](solicitarlocalizacao.png)
+
+#### 8. Adicionar Delay
 - Configure o intervalo de tempo (em segundos) entre as mensagens
 - Importante para garantir a sequência correta das mensagens
 
-#### 7. Adicionar Tag
+#### 9. Adicionar Tag
 - Permite marcar o contato com uma etiqueta específica
 
-#### 8. Adicionar CRM
+#### 10. Adicionar CRM
 - Move contato para lane no crm compartilhado
 
-#### 9. Adicionar Webhook (GET)
+#### 11. Adicionar Webhook (GET)
 - Integração com sistemas externos
 - Útil para enviar informações capturadas durante o atendimento
 
