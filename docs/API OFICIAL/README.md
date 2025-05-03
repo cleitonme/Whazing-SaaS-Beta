@@ -16,17 +16,15 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 ### ⚠️ Considerações importantes
 
 - É possível conectar a API oficial e manter o aplicativo do WhatsApp no celular (**recurso em fase Beta**).
-- Após conectar com a API oficial, **não será mais possível usar a API não oficial** (como Baileys, Wavoip ou o app executável do Windows).  
+- Após conectar com a API oficial, **não será mais possível usar a API não oficial**.  
   ➤ Caso o cliente esteja usando essas soluções, **ele não receberá mensagens da API oficial**.
-- A API oficial **não oferece suporte a grupos**. O acesso será apenas pelo app ou WhatsApp Web — **não será possível acessar via Whazing**.
+- A API oficial **não oferece suporte a grupos**. O acesso será apenas pelo app ou WhatsApp Web. Grupos possivel acessar atraves baileys no whazing.
 - O envio de templates está configurado, mas **ainda não testado com QR Code**.  
   ➤ [Tabela oficial de preços da Meta](https://business.whatsapp.com/products/platform-pricing?lang=pt_BR&country=Brasil&currency=D%C3%B3lar%20(USD)&category=Utilit%C3%A1rios)
 - A API oficial **não exibe a foto do contato**.
-- Mensagens enviadas via app ou Web **não geram custo**, mas **não aparecerão no Whazing**.
+- Mensagens enviadas via app ou Web **não geram custo**.
 - Você tem **24 horas** para responder uma mensagem do cliente via Whazing.
 - Versão QR Code é **somente receptiva**, **não envia templates** (fase Beta).  
-  ➤ No momento, posso desenvolver esses envios manualmente.
-- Na versão QR Code, há **falha ao receber a primeira mensagem**.
 
 ---
 
@@ -101,13 +99,13 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
   - [wwebjs-api](https://github.com/avoylenko/wwebjs-api): API REST, envia **texto e arquivos** e aceita **vários canais**.
 - Por serem pesadas, **não serão integradas diretamente ao Whazing**, para evitar impacto no desempenho.
 
-- **Modo fallback será implementado** para enviar mensagens via wwjs caso a API oficial falhe.
+- **Modo fallback** para enviar mensagens caso a API oficial não permita.
 
 ---
 
 ## 🔁 Modo Fallback para API oficial via QR Code
 
-- Se uma mensagem **não for enviada pela API oficial**, o sistema tentará enviar automaticamente via **wwebjs-api** (se estiver configurada).
+- Se uma mensagem **não for enviada pela API oficial**, o sistema tentará enviar automaticamente via **wwebjs-api** (se estiver configurada) ou Baileys (se estiver configurada).
 - Um documento separado será disponibilizado explicando a configuração.
 
 ---
