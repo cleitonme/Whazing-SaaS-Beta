@@ -1,7 +1,7 @@
 # Modo Fallback
 
 Caso você esteja utilizando a API oficial (com leitura de QR Code e manutenção de sessão via aplicativo), o sistema contará com um **modo fallback**.  
-Se a mensagem falhar na API oficial, o sistema tentará reenviá-la usando o **wwebjs**.
+Se a mensagem falhar na API oficial, o sistema tentará reenviá-la usando o **wwebjs** ou baileys depende o que estiver configurado.
 
 ---
 
@@ -12,10 +12,12 @@ Se falhar, o ícone mudará para um "X", indicando a rejeição da mensagem:
 
 ![Mensagem rejeitada](mensagemrejeitada.png)
 
-- Se o canal estiver configurado com o **wwebjs**, o sistema tentará o reenvio por ele.  
-Se for bem-sucedido, o ícone será atualizado para um **globo**, indicando que foi enviado via wwebjs:
+- Se o canal estiver configurado com o **wwebjs** ou **Baileys**, o sistema tentará o reenvio por ele.  
+Se for bem-sucedido, o ícone será atualizado para um **globo**, indicando que foi enviado via wwebjs ou baileys:
 
 ![Enviado via wwebjs](wwjs.png)
+
+- Caso opção *Ignorar Mensagens Enviadas fora do aplicativo* estiver desativado vai aparecer mensagem novamente.
 
 ---
 
