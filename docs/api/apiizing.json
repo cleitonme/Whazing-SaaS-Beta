@@ -57,6 +57,60 @@
 			"response": []
 		},
 		{
+			"name": "SendMessageSticker",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "media",
+							"type": "file",
+							"src": "PVW0TQnJi/Sem título.png"
+						},
+						{
+							"key": "body",
+							"value": "sticker",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "554896459588",
+							"type": "text"
+						},
+						{
+							"key": "externalKey",
+							"value": "externalKeydd211",
+							"type": "text"
+						},
+						{
+							"key": "sticker",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}",
+					"host": [
+						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "SendMessageAPIText",
 			"request": {
 				"auth": {
@@ -84,6 +138,42 @@
 					"raw": "{{base_url}}",
 					"host": [
 						"{{base_url}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessage Localizacao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"location\",\n    \"longitude\": -27.2842864,\n    \"latitude\": -48.9243959,\n    \"name\": \"Informeurer Informatica\",\n    \"address\": \"R. Nicolau Bado, 219 - Centro, Nova Trento - SC, 88270-000\"\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/location",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"location"
 					]
 				}
 			},
@@ -286,7 +376,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"number\": 554896459588,\n    \"crm\": 19\n}",
+					"raw": "{\n    \"number\": 555135001381,\n    \"crm\": 0\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -322,7 +412,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"ticketId\": 2881,\n    \"tag\": 19\n}",
+					"raw": "{\n    \"ticketId\": 3183,\n    \"tags\": []\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -358,7 +448,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"contactId\": 3397,\n    \"tag\": 19\n}",
+					"raw": "{\n    \"contactId\": 3649,\n    \"tags\": [25]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -394,7 +484,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"number\": 554896459588,\n    \"tag\": 19\n}",
+					"raw": "{\n    \"number\": 555135001381,\n    \"tags\": [25, 26]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -971,6 +1061,42 @@
 				"body": {
 					"mode": "raw",
 					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/apioficial",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"apioficial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessageAPIOficial solicitar localizacao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
 					"options": {
 						"raw": {
 							"language": "json"
