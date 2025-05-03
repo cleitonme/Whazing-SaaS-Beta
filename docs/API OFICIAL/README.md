@@ -41,6 +41,9 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 
 - **Links com informações**  
   ![print](links.png)
+  
+- **Solicitar localização**  
+  ![print](solicitarlocalizacao.png)
 
 ---
 
