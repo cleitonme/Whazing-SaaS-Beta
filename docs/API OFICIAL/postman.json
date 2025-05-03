@@ -137,6 +137,42 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "SendMessageAPIOficial solicitar localizacao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/apioficial",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"apioficial"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
