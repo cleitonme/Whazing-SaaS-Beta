@@ -78,7 +78,7 @@ Se necessário, considere rodá-la em uma VPS separada.
 
 ---
 
-## Como configurar
+## Como configurar via WWJS
 
 1. Vá até **Canais** e clique no ícone de edição:
 
@@ -102,6 +102,12 @@ Se aparecer a mensagem `"QR Code não está pronto ou já foi escaneado"`, cliqu
 Com o QR na tela, basta escanear com o WhatsApp em "Conectar ao WhatsApp Web".
 
 Após conectar, a página será atualizada e o botão mudará para **Desconectar wwebjs**, indicando que está funcionando corretamente.
+
+## Como configurar via baileys
+
+![baileys](baileys.png
+
+- Selecione o canal queira mensagem saia, esse canal será usado para enviar mensagem e para chamadas pelo wavoip caso tenha apikey
 
 ---
 
