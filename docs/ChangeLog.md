@@ -1,3 +1,34 @@
+## Versão 2.9.1 - Changelog
+
+* Wavoip disponível apenas na versão premium
+* Suporte completo à API Wavoip: fazer e receber chamadas, além de relatórios de chamadas realizadas *(relatório disponível apenas para chamadas feitas com o novo Whazing)*
+* Não é mais necessário escanear QR Code no site da Wavoip – integração 100% com Whazing, basta inserir a chave
+* Referências ao nome Wavoip nos textos foram removidas – ideia é que vocês possam vender como serviço adicional sem divulgar o fornecedor
+* Versão do Baileys modificada que permite uso do Wavoip com a API oficial conectada via QR Code
+* No cadastro de usuários, nova configuração permite liberar o uso do Wavoip por canal, semelhante ao controle por filas. Se o canal estiver marcado, o usuário poderá fazer e receber ligações por ele
+
+---
+
+* Integração com Typebot (API não oficial): caso não tenha valor preenchido na lista, o sistema usa um texto padrão para garantir o funcionamento
+* API Oficial – novo botão para solicitar localização do cliente, disponível no bot e na API
+* Suporte ao envio de localização via API (oficial e não oficial), disponível tanto no bot quanto via API
+* Notificação de atualização de navegador agora mais chamativa
+
+---
+
+* API não oficial (Baileys): nova opção para ignorar chats privados. Objetivo é permitir o uso conjunto com a API oficial, fazendo chamadas e enviando mensagens fora da janela via Baileys, e recebendo/enviando mensagens normalmente pela API oficial. Também permite acesso a grupos via Baileys
+* Novo modo fallback da API oficial usando conexão Baileys – permite envio de mensagens e chamadas via Wavoip. Requer versão modificada instalada no Whazing (não funciona com a original). Fallback por WWJS externo continua disponível
+* Sistema agora captura mensagens enviadas fora do Whazing usando o hub (ex: Instagram, API oficial via QR Code)
+
+---
+
+* Identificação das interações no bot interno
+* Nova opção de envio de figurinhas: qualquer imagem enviada será convertida automaticamente em figurinha
+* API – mudança de fila: altera integração associada a fila
+* API – endpoint de tags reformulado: agora é possível adicionar várias tags de uma vez ou remover todas
+* API – endpoint do CRM: para remover um contato do CRM, envie o valor `0`
+
+
 ## Versão 2.9 - Changelog
 
 ### 🛠 Alterações na API
