@@ -105,7 +105,7 @@ Após conectar, a página será atualizada e o botão mudará para **Desconectar
 
 ## Como configurar via baileys
 
-![baileys](baileys.png
+![baileys](baileys.png)
 
 - Selecione o canal queira mensagem saia, esse canal será usado para enviar mensagem e para chamadas pelo wavoip caso tenha apikey
 
