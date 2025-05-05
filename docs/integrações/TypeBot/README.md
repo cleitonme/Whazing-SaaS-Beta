@@ -22,6 +22,7 @@
 - **protocol**
 - **ticket**
 - **remoteJid**
+- **firstMessage**
 
 ### Comandos Possíveis
 
