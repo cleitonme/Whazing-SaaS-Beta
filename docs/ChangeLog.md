@@ -1,3 +1,8 @@
+## Versão 2.9.2 - Changelog
+
+- Configuração whazing não capturar mensagens enviadas por fora prataforma sai das configuração passa ser por canal
+- Exibição na dashboard do painel SaaS quantidade empresas vencidas
+
 ## Versão 2.9.1 - Changelog
 
 * Wavoip disponível apenas na versão premium

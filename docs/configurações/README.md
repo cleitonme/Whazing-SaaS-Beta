@@ -67,9 +67,6 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
 - 🔔 **Habilitar notificações de grupos**  
   Permite notificações de novas mensagens em grupos.
 
-- ✉️ **Ignorar mensagens enviadas fora do WHAZING**  
-  Mensagens enviadas por outros aplicativos não serão sincronizadas.
-
 - 📞 **Recusar chamadas no WhatsApp**  
   Bloqueia chamadas de voz via WhatsApp.
 
