@@ -6,7 +6,7 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 
 ### 💵 Valores
 
-- **Taxa de ativação do canal oficial:** R$ 120,00  
+- **Taxa de ativação do canal oficial:** R$ 150,00  
 - Após ativado, **não poderá ser excluído**. Caso seja, a taxa de ativação será **perdida**.
 - Em caso de **banimento do número**, a taxa de ativação também é **perdida** — sim, a API oficial **também pode ser banida**.
 - Mensalidade de uso do Hub: **clientes Premium têm valor especial**.
