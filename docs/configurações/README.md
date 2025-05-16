@@ -67,12 +67,6 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
 - 🔔 **Habilitar notificações de grupos**  
   Permite notificações de novas mensagens em grupos.
 
-- 📞 **Recusar chamadas no WhatsApp**  
-  Bloqueia chamadas de voz via WhatsApp.
-
-- 💬 **Mensagem ao rejeitar ligação**  
-  Define a resposta automática ao cliente após rejeição de chamada.
-
 - ✍️ **Usuários poderão desativar a assinatura das mensagens**  
   Permite usuários removerem assinatura automática nas respostas.
 
