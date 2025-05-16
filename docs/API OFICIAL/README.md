@@ -17,14 +17,15 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 
 - É possível conectar a API oficial e manter o aplicativo do WhatsApp no celular (**recurso em fase Beta**).
 - Após conectar com a API oficial, **não será mais possível usar a API não oficial**.  
-  ➤ Caso o cliente esteja usando essas soluções, **ele não receberá mensagens da API oficial**.
+
 - A API oficial **não oferece suporte a grupos**. O acesso será apenas pelo app ou WhatsApp Web. Grupos possivel acessar atraves baileys no whazing.
-- O envio de templates está configurado, mas **ainda não testado com QR Code**.  
+- O envio de templates está configurado
   ➤ [Tabela oficial de preços da Meta](https://business.whatsapp.com/products/platform-pricing?lang=pt_BR&country=Brasil&currency=D%C3%B3lar%20(USD)&category=Utilit%C3%A1rios)
 - A API oficial **não exibe a foto do contato**.
 - Mensagens enviadas via app ou Web **não geram custo**.
 - Você tem **24 horas** para responder uma mensagem do cliente via Whazing.
-- Versão QR Code é **somente receptiva**, **não envia templates** (fase Beta).  
+
+- No modo qrcode tem algumas mensagens que não chegam na api oficial, somente aparece no celular
 
 ---
 
