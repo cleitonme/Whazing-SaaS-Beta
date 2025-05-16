@@ -223,7 +223,7 @@ Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no 
 }
 ```
 
-#### 2. Consultar Ticket
+#### 2. Consulta ultimo Ticket atribuido ao canal
 - **Método**: POST
 - **Endpoint**: `/showticket`
 
@@ -243,7 +243,7 @@ Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no 
 }
 ```
 
-#### 4. Consultar Todos os Tickets
+#### 4. Consultar Todos os Tickets atribuidos ao canal
 - **Método**: POST
 - **Endpoint**: `/showallticket`
 
