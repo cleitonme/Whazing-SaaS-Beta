@@ -1,4 +1,59 @@
-## Versão 2.9.1 - Changelog
+## Versão 2.9.2 Beta - Changelog
+
+### 🐛 Correções de Bugs
+- Corrigido erro na confirmação de leitura de mensagens enviadas pelo bot
+- Resolvido não funcionamento do webhook quando ticket é fechado usando interação do bot
+- Corrigido bug da API oficial beta onde template com imagem não era enviado
+- Solucionado problema nas estatísticas de entrega na campanha da API oficial beta
+- Resolvido problema de duplicação de mensagens enviadas pelo hub
+- Corrigido problema de rolagem na lista de mensagens de despedida
+- Ajustado permissões para admin poder apagar mensagem de despedida
+- Corrigido exibição do horário de fechamento no relatório de tickets
+- Corrigido tradução na beta onde relatório exibia tickets fechados como pendentes
+
+### ⚙️ Melhorias nas Configurações
+- A opção de "não capturar mensagens enviadas fora da plataforma" agora é configurável por canal, não mais uma configuração geral do Whazing
+- Adicionado controle de acesso por dia e horário dos usuários
+- Implementado definição de horário de atendimento por canal/fila
+- Adicionado cadastro de feriados com horários diferenciados de atendimento
+- Configuração para ignorar chamadas movida para nível de canal (otimização para WaVoip)
+- Implementado soft delete para usuários (mantém dados no banco ao deletar)
+
+
+### 🔄 APIs Modificadas
+- Endpoint `showticket` atualizado para retornar o ticket mais recente atribuído ao canal selecionado no cadastro de APIs
+- Endpoint `showallticket` atualizado para listar todos os tickets atribuídos ao canal selecionado na API
+
+### 🔄 Melhorias no WaVoip
+- Adicionada notificação automática quando uma chamada é atendida por outro usuário:
+  - O webphone é fechado automaticamente para o usuário original
+  - Uma notificação é exibida informando qual usuário atendeu a chamada
+
+### 🚀 Novos Recursos
+- Suporte ao envio de contatos
+- Implementado espiar ticket em modo mobile
+
+### 💅 Melhorias na Interface
+- Nova exibição na dashboard SaaS da quantidade de empresas vencidas
+- Adicionado foto do usuário
+- Implementado filtro para empresas vencidas
+- Melhorada tela de cadastro de API com exibição do nome e canal
+- Adicionado destaque no botão de configurar canal
+- Otimização da tela de atendimento para modo mobile:
+  - Removido botão de emoji para melhor aproveitamento de espaço
+  - Reorganizado botão de anexo
+  - Novo botão "+" com múltiplas opções
+  - Suporte a envio de contatos, figurinhas e templates
+
+### 📱 Otimizações Mobile
+- Interface otimizada para melhor experiência em dispositivos móveis
+- Reorganização de botões e controles para maior eficiência
+- Melhor aproveitamento do espaço em tela
+
+---
+*Nota: Esta versão beta contém importantes correções de bugs e melhorias significativas na experiência do usuário, especialmente para uso mobile.*
+
+## Versão 2.9.1 Beta - Changelog
 
 * Wavoip disponível apenas na versão premium
 * Suporte completo à API Wavoip: fazer e receber chamadas, além de relatórios de chamadas realizadas *(relatório disponível apenas para chamadas feitas com o novo Whazing)*
@@ -29,7 +84,7 @@
 * API – endpoint do CRM: para remover um contato do CRM, envie o valor `0`
 
 
-## Versão 2.9 - Changelog
+## Versão 2.9 Beta - Changelog
 
 ### 🛠 Alterações na API
 - A versão gratuita adicionará automaticamente a assinatura “whazing.com.br” nas mensagens enviadas.
