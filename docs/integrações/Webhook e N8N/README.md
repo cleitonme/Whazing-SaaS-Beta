@@ -41,3 +41,12 @@ Em vez de você precisar consultar o Whazing periodicamente para saber se algo m
 ---
 
 > 📢 **Importante:** Para utilizar WebHooks e APIs corretamente, é necessário configurar os endpoints no seu sistema para receber os dados enviados pelo Whazing.
+
+
+# Modelos para estudo
+
+- [Baixe e importe o exemplo de fluxo compatível com o Whazing](Modelo_Whazing_n8n.json).
+
+- [Baixe e importe o exemplo de fluxo compatível com o Whazing](modelo_com_alguns_endpoints).
+
+Obrigado Elizeu Garcez e Ricardo Schonfelder Filho por compartilhar modelos
