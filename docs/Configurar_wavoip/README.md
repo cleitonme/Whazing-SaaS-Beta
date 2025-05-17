@@ -27,6 +27,11 @@
 7. **Para realizar uma ligação**  
    - Abra um ticket e você verá o botão de telefone na parte superior do ticket. Clique nele para iniciar a ligação.
 
+8. **Receber chamadas e gravação**
+   - Garanta que esteja habilitada nas configurações para receber e gravar chamadas
+
+![Canal](wavoip.png)
+
 ---
 
 ### Dica Especial  
