@@ -1,8 +1,3 @@
-## Versão 2.9.3 Beta - Changelog
-
-- Botão sincronizar contatos somente admin
-- Validação horario atendimento - caso ticket esteja aberto e responsavel pelo ticket online não sera enviada aviso fora horario atendimento
-
 ## Versão 2.9.2 Beta - Changelog
 
 ### 🐛 Correções de Bugs
