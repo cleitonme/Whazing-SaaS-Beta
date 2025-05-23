@@ -1,3 +1,20 @@
+## Versão 2.9.3 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+- bug da beta - * Corrigido botão de **mutar chamadas (wavoip)** que não funcionava corretamente
+
+### ⚙️ Melhorias e Novos Recursos
+
+* Focar automaticamente após envio de mensagens, campo texto
+* **Botão "Sincronizar Contatos"** agora disponível apenas para administradores
+* Validação de **horário de atendimento** ajustada: se o responsável estiver online e o ticket aberto, aviso fora do horário não será enviado
+* Implementado **cache no título da página** para caso queda backend manter titulo
+* Campos de **botões e listas agora aceitam variáveis dinâmicas**
+* Atualizada versão da **biblioteca Baileys**, restabelecendo conexão via código Código
+* Melhorias nas **traduções do sistema**
+* Sistema passou a exigir **senhas mais complexas** para maior segurança
+
 ## Versão 2.9.2 Beta - Changelog
 
 ### 🐛 Correções de Bugs
