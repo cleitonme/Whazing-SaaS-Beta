@@ -1,3 +1,61 @@
+## Versão 2.9.4 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+* Corrigida a **cor da legenda nos gráficos de pizza** ao passar o mouse (hover)
+
+### ⚙️ Melhorias de Sistema
+
+* **Otimização no backend:** remoção de trechos de código não utilizados
+* **Melhoria visual** na exibição de áudios na tela de atendimento
+* **Zoom na imagem de perfil do contato** na tela de atendimento
+* **Remoção do texto "aproximadamente"** na tela de tickets, por ser muito extenso
+* **Campo de edição de contatos atualizado:** agora é possível desabilitar a avaliação do contato (apenas para Admins e Supervisores)
+* Pressionar **Ctrl + Enter permite quebra de linha** na tela de atendimento
+
+### 🤖 Integrações e Automações
+
+* Atendimentos feitos por **automações (IA, Typebot)** agora marcam mensagens como lidas automaticamente
+* Tickets com **integrações ativas** (como Typebot ou IA) **não acionam validação de horário de atendimento**
+
+### 🧑💼 Funcionalidades e Recursos
+
+* **Nova indicação visual:** mostra qual usuário reagiu à mensagem
+* **Nova indicação visual:** mostra qual usuário encaminhou uma mensagem
+* **Nova opção "Motivo de Encerramento" (somente plano Premium):**
+
+  * Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório
+  * Os motivos podem ser utilizados como filtro e em gráficos no dashboard
+  * A opção só aparece se houver motivos cadastrados e ativos
+  * Exemplo de motivos: "Cliente desistiu", "Preço alto", "Não respondeu"
+
+### 📊 Relatórios e Dashboard
+
+* **Nova coluna no relatório de tickets:** "Primeira mensagem" (mensagem que originou o ticket), útil para rastrear a origem do lead
+* **Novo gráfico de evolução por canal**
+* **Novo gráfico de atendimentos por canal**
+* **Filtro por canal** adicionado à dashboard (além do filtro por data)
+
+## Versão 2.9.4 Beta - Changelog
+
+- bug - correção cor legenda ao passar mouse graficos de pizza
+
+- Otimização backend retirada partes não usadas
+- Zoom imagem profile do contato tela atendimento
+- Atendimento feito por automações como ia, typebot marcam mensagens como lidas.
+- Ticket com integrações ativas não aciona horario de atendimento. Ex. Typebot, IA.
+- Indicação usuario que reagiu
+- Indicação usuario encaminhou mensagem
+- Nova opção Motivo encerramento(somente premium) - Ao fechar ticket usuario será obrigatorio selecionar motivo para poder fechar, esses valores podem ser usados no filtros e grafico dashboard, caso não tenha motivo cadastrado ou ativo a opção não aparece. Exemplo: Não fechou, Preço alto. Aumentando o rastreamento dos atendimentos
+- Nova coluna relatorio tickets, primeira mensagem(mensagem que fez ticket ser aberto). Pode ser usado para ajudar rastrear origem do lead.
+- Melhoria visual audios tela atendimento.
+- Retirado aproximadamente tela atendimento tickets, texto muito longo.
+- Novo grafico evolução por canal(anterior era por tipo de canal)
+- Novo grafico atendimento por canal(anterior era por tipo de canal)
+- Alem do filtro data será possivel filtrar por canal na dashboard
+- Segura Ctrl possibilidade fazer quebra linha na tela atendimento
+- Edição contatos configuração desabilitar avaliação, somente disponivel para admin e supervisor
+
 ## Versão 2.9.3 Beta - Changelog
 
 ### 🐛 Correções de Bugs
