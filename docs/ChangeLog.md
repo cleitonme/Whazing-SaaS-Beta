@@ -1,3 +1,10 @@
+## Versão 2.9.4.1 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+- Arquivos recebidos com # no nome, não conseguir abrir
+- Volta volta rolagem lista mensagens
+
 ## Versão 2.9.4 Beta - Changelog
 
 ### 🐛 Correções de Bugs
