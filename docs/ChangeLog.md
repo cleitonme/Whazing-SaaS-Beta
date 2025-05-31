@@ -1,3 +1,11 @@
+## Versão 2.9.4.2 Beta - Changelog
+
+- Opção salvar senha tela login
+- Cache local figurinhas enviadas
+- Possivel quebra linha tela print tambem
+- Melhorias layout da dashboard
+- Identificação mensagens enviadas por fora whazing
+
 ## Versão 2.9.4.1 Beta - Changelog
 
 ### 🐛 Correções de Bugs
