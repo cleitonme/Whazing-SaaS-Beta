@@ -1,3 +1,7 @@
+## Versão 2.9.4.3 Beta - Changelog
+
+- atualização versão baileys correção conectar via codigo
+
 ## Versão 2.9.4.2 Beta - Changelog
 
 - Opção salvar senha tela login
