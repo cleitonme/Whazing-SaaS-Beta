@@ -1,3 +1,21 @@
+## Versão 2.9.4.4 Beta - Changelog
+
+- mudanças no banco - não permite downgrade de versão
+
+- bug - Mensagem rapida remover anexo
+
+- Tenant vencido não consegui mais enviar mensagens
+- Refatoração envio hub para melhor desempenho e futurar auditorias
+- Refatoração bot interno preparação novos canais
+- retorno filtro canal dashboard apaguei sem querer
+- melhoria integração ia - configuração Intervalo (ms) entre mensagens
+Define o tempo de espera (em milissegundos) entre as respostas da IA.
+Por exemplo: 15000 ms significa 15 segundos.
+
+Durante esse intervalo, se o cliente enviar várias mensagens, a IA responderá apenas uma vez — ou seja, ela aguardará esse tempo antes de responder novamente.
+
+Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente envie várias mensagens nesse tempo.
+
 ## Versão 2.9.4.3 Beta - Changelog
 
 - atualização versão baileys correção conectar via codigo

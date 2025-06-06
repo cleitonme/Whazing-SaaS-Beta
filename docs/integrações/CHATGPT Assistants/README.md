@@ -13,7 +13,15 @@
 
 1. **Fila**: Selecione a fila para a qual a IA deve transferir caso não consiga responder às perguntas ou resolver o problema.
 2  **Mensagem de transferencia**: Mensagem será enviado cliente caso ele pedir falar com um humano
-3. **Intervalo (ms) entre mensagens**: Defina o tempo entre as respostas da IA. Por exemplo, 1000ms = 1 segundo.
+3. **Intervalo (ms) entre mensagens**: 
+
+Define o tempo de espera (em milissegundos) entre as respostas da IA.
+Por exemplo: 15000 ms significa 15 segundos.
+
+Durante esse intervalo, se o cliente enviar várias mensagens, a IA responderá apenas uma vez — ou seja, ela aguardará esse tempo antes de responder novamente.
+
+Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente envie várias mensagens nesse tempo.
+
 4. **API Key**: Chave de API para conexão com a IA. Lembre-se que o ChatGPT cobra por token. Obtenha sua chave [aqui](https://platform.openai.com/settings/organization/api-keys).
 5. **ASSISTANT ID**: Identificação do assistente (começa com `asst_`). Obtenha seu ID [aqui](https://platform.openai.com/playground/assistants).
 

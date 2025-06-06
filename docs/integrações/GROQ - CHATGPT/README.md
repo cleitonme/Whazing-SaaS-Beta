@@ -8,7 +8,15 @@
 - **Prompt**: Escreva como a IA deve atender o cliente e agir.
 - **Fila**: Escolha a fila para a qual a IA deve transferir se não conseguir responder ou resolver o problema.
 - **Mensagem de transferencia**: Mensagem será enviado cliente caso ele pedir falar com um humano
-- **Intervalo (ms) entre mensagens**: Tempo entre as respostas da IA (1000 ms = 1 segundo).
+- **Intervalo (ms) entre mensagens**:
+ 
+Define o tempo de espera (em milissegundos) entre as respostas da IA.
+Por exemplo: 15000 ms significa 15 segundos.
+
+Durante esse intervalo, se o cliente enviar várias mensagens, a IA responderá apenas uma vez — ou seja, ela aguardará esse tempo antes de responder novamente.
+
+Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente envie várias mensagens nesse tempo.
+
 - **API Key**: Chave de API para conexão com a IA. Lembre-se de que o ChatGPT cobra por token.
 - **Máximo de tokens na resposta**: Define o tamanho máximo da resposta. O ChatGPT cobra por token.
 - **Máximo de mensagens no histórico**: Número de mensagens que a IA consultará para montar a resposta. Apenas mensagens do mesmo ticket são consultadas. Um valor muito alto pode fazer a IA travar e aumentar os custos com tokens.
