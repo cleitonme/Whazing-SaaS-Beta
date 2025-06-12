@@ -38,6 +38,7 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
+	lid: contact.lid
   } : null,
 
   user: user ? {                         // Informações do usuário (caso mensagem enviada manualmente)

@@ -31,6 +31,7 @@ const dataToSend = {
     email: ticket.contact.email,
     isGroup: ticket.contact.isGroup,
     pushname: ticket.contact.pushname,
+	lid: contact.lid,
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -65,6 +66,7 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
+	lid: contact.lid,
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -99,6 +101,7 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
+	lid: contact.lid,
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -124,6 +127,7 @@ const dataToSend = {
     queueId: ticket.queueId,
     userId: ticket.userId,
     apiConfig: ticket.apiConfig,
+	closingReasonId: ticket.closingReasonId
   },
   contact: contact ? {
     id: contact.id,
@@ -133,6 +137,7 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
+	lid: contact.lid,
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -175,6 +180,7 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
+	lid: contact.lid,
   } : null,
   user: user ? {
     id: user.id,

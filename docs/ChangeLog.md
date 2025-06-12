@@ -1,3 +1,22 @@
+## Versão 2.9.4.6 Beta - Changelog
+
+- bug - bot não acionar com arquivos
+- bug - mensagens editadas com anexo ficava undefined texto
+
+- webhook fechamento ticket colocado closingReasonId
+- Suporte edição caption arquivos enviados
+- Suporte responder com imagem ou arquivo ou audio
+
+- preparativos para mudança whatsapp criação estrutura para trabalhar com "LID"
+- API se usar numero@lid da ele vai enviar usando lid
+- Webhook adicionado lid do contato no json
+
+## Versão 2.9.4.5 Beta - Changelog
+
+- bug - pix assas
+
+- Melhoria tratamento e aviso de erros ao criar novo ticket caso ja tenha uma aberto
+
 ## Versão 2.9.4.4 Beta - Changelog
 
 - mudanças no banco - não permite downgrade de versão
