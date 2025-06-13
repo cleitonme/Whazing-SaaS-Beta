@@ -1,3 +1,23 @@
+## Versão 2.9.4.7 Beta - Changelog
+
+ *quem ta na versao Versão 2.9.4.6 Beta atualize agora urgente*
+
+- bug - bot enviar mensagem transferencia no fechar ticket
+- bug - Exibição data feriados
+- bug - botão clicar responder audio
+- bug - Correção envio arquivos criado versão 2.9.4.6
+
+- Relatorio tickets, filtro por estado
+- Relatorio tickets, filtro por informações adicionais do contato
+- Relatorio tickets, mostra numero telefone do contato
+- Relatorio tickets, mostra informações adicionais do contato
+- Relatorio tickets, botão ocultar filtros para ser melhor leitura dos relatorios
+- Relatorio tickets, opção escolher quantidade tickets carregar
+- Relatorio tickets, opção escolher carregar grupos ou não
+- Relatorio tickets, opção escolher colunas para aparecer
+- Fechamento ticket em massa marca eles como lidos
+- Listar usuarios painel saas da empresa mostra se ta online e ultimo horario estava online - informação importante acompanhar se cliente esta usando sistema, e tentar pegar feedback por que não
+
 ## Versão 2.9.4.6 Beta - Changelog
 
 - bug - bot não acionar com arquivos
