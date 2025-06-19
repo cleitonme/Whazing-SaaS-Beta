@@ -76,14 +76,15 @@ Adicione os comandos abaixo em um Bubble de texto:
    ```
 
 - Comando Criar ou alterar informação adicional contato
-   ```bash
-  #{
+  
+```bash
+#{
   "AddiInfo": {
     "description": "plano",
     "information": "premium"
   }
 }
- ```
+```
 
 Os IDs podem ser obtidos na tela que lista os cadastros no Whazing.
 
