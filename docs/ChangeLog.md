@@ -1,3 +1,28 @@
+## Versão 2.9.4.8 Beta - Changelog
+
+- Endpoint cadastro teste alterado para evitar ataques testes falsos
+
+- API ADMIN - Endpoint Admin criar teste - esse endpoint separado com validações extras, nao prescisa ta habilitada a opção criar testes, não envia mensagem de boas vindas(ideia vocês personalize maximo possivel por exemplo usando typebot). Caso queria validar telefone ou enviar mensagem boas use endpoints ja existe e personalize a experiencia do usuario.
+- API ADMIN -  Endpoint Admin update empresa
+- API ADMIN - Endpoint Admin listar todas empresas ou filtrar id especifico
+- API ADMIN - Endpoint Admin adicionar 1 mês na empresa
+- API ADMIN - Endpoint Admin Listar usuarios da empresa
+- API ADMIN - Endpoint Admin atualzar senha usuario
+
+- API - Endpoint para criar contato
+- API - Enpoint listar mensagens ticket
+- API - Melhoria validação token api externa para evitar ataques
+
+- Busca por mensagem especifica na tela atendimento - tem limites, contatos com muitas mensagens não vai localizar todas
+- Input do atendimento aceitar correção sugeridas pelo navegador usado
+- Importação contatos do aparelho tem agora posibilidade de selecionar etiqueta, etiquetas ou crm
+
+- TypeBot - Criado integração lista modelo evolution - possivel criar lista personalizada usando burble text  - tem exemplo fluxo para importar
+- TypeBot - Criado integração botão estilo whazing - possivel criar botão direto usando comandos especificos typebot
+- Typebot - As informações adicionais funcionaram como variaveis typebot (atenção essa informação carregada quando inicia conexão typebot se alguma for alterada durante fluxo typebot não vai alterar até fluxo typebot for reniciado)
+- Typebot - Novo comando possivel para alterar informações adicionais do contato - tem exemplo fluxo para importar
+- Typebot - Ajustados parte comandos para quando ser usado etiquetas, crm, informações adicionais não parar fluxo
+
 ## Versão 2.9.4.7 Beta - Changelog
 
  *quem ta na versao Versão 2.9.4.6 Beta atualize agora urgente*
