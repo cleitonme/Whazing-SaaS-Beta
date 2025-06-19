@@ -9,13 +9,13 @@
 - API ADMIN - Endpoint Admin Listar usuarios da empresa
 - API ADMIN - Endpoint Admin atualzar senha usuario
 
-- API - Endpoint para criar contato
+- API - Endpoint para editar contato
 - API - Enpoint listar mensagens ticket
 - API - Melhoria validação token api externa para evitar ataques
 
 - Busca por mensagem especifica na tela atendimento - tem limites, contatos com muitas mensagens não vai localizar todas
 - Input do atendimento aceitar correção sugeridas pelo navegador usado
-- Importação contatos do aparelho tem agora posibilidade de selecionar etiqueta, etiquetas ou crm
+- Importação contatos do aparelho tem agora posibilidade de selecionar etiquetas, carteira ou crm
 
 - TypeBot - Criado integração lista modelo evolution - possivel criar lista personalizada usando burble text  - tem exemplo fluxo para importar
 - TypeBot - Criado integração botão estilo whazing - possivel criar botão direto usando comandos especificos typebot
