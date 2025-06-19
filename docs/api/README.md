@@ -208,6 +208,34 @@ Por ticketId:
 
 Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no endpoint tags anteriores são removidas.
 
+#### 5. Editar Contato
+- **Método**: POST
+- **Endpoint**: `/updatecontact`
+
+Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar contato a ser alterado
+
+```json
+{
+  "name": "Nome do Contato",
+  "number": "5511999999999",
+  "email": "email@exemplo.com",
+  "extraInfo": [
+    {
+      "name": "Campo Extra",
+      "value": "Valor"
+    }
+  ],
+  "wallets": [],
+  "disableBot": false,
+  "disableCampaign": false,
+  "commentary": "Observações",
+  "deadline": "2025-12-31T23:59:59Z",
+  "disableKanban": false,
+  "kanbanPrice": "1500",
+  "ignore": false
+}
+```
+
 ### Tickets
 
 #### 1. Criar Ticket
@@ -276,6 +304,10 @@ Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no 
   "queueId": 1
 }
 ```
+
+#### 7. Listar todas mensagens do ticket
+- **Método**: GET
+- **Endpoint**: `/ticket/{ticketId}`
 
 ### Mensagens Interativas
 
