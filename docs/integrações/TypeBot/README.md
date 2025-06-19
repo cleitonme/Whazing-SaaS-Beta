@@ -91,7 +91,7 @@ Os IDs podem ser obtidos na tela que lista os cadastros no Whazing.
 
 - Criar lista personalizada
 
-   ```bash
+```bash
 [list]
 [title]Título da Lista
 [description]Descrição da lista
@@ -120,11 +120,11 @@ rowId: id_opcao_3
 [/row]
 [/section]
 [/menu]
-   ```
+```
 
 - Criar menu reply - api oficial somente
 
-   ```bash
+```bash
 [replybutton]
 [text]Escolha uma das opções abaixo[text]
 [button]
@@ -139,24 +139,24 @@ id: 2
 title: Botão 3
 id: 3
 [button]
-   ```
+```
 
 - Criar url button - api oficial somente
 
-   ```bash
+```bash
 [urlbutton]
 [header]Datas Disponíveis[header]
 [footer]Datas sujeitas a alterações.[footer]
 [buttonText]Ver Datas[buttonText]
 [url]https://www.example.com/dates[url]
-   ```
+```
    
 - Criar solicitar localizacao - api oficial somente
 
-   ```bash
+```bash
 [locationrequest]
 [text]Por favor compartilhe sua localização para encontrarmos a loja mais próxima[text]
-   ```
+```
 
 
 **IMPORTANTE**: 
