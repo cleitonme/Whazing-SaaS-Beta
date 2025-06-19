@@ -1,1263 +1,1388 @@
 {
 	"info": {
-		"_postman_id": "166b6af2-1176-4808-9674-04887961ba85",
-		"name": "API Whazing",
+		"_postman_id": "5eeab5b1-23ce-4c0e-8eff-07bd081f000d",
+		"name": "API Whazing Copy",
 		"description": "Teste API Whazing",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "33969866"
 	},
 	"item": [
 		{
-			"name": "SendMessageAPIFile",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "media",
-							"type": "file",
-							"src": "/home/durans/Downloads/577.pdf"
+			"name": "Mensagens",
+			"item": [
+				{
+					"name": "SendMessageAPIFile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "body",
-							"value": "Mensagem de teste 2",
-							"type": "text"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": "/home/durans/Downloads/577.pdf"
+								},
+								{
+									"key": "body",
+									"value": "Mensagem de teste 2",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "554896459588",
+									"type": "text"
+								},
+								{
+									"key": "externalKey",
+									"value": "externalKeydd211",
+									"type": "text"
+								}
+							]
 						},
-						{
-							"key": "number",
-							"value": "554896459588",
-							"type": "text"
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageSticker",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "externalKey",
-							"value": "externalKeydd211",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "{{base_url}}",
-					"host": [
-						"{{base_url}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageSticker",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "media",
-							"type": "file",
-							"src": "PVW0TQnJi/Sem título.png"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": "PVW0TQnJi/Sem título.png"
+								},
+								{
+									"key": "body",
+									"value": "sticker",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "554896459588",
+									"type": "text"
+								},
+								{
+									"key": "externalKey",
+									"value": "externalKeydd211",
+									"type": "text"
+								},
+								{
+									"key": "sticker",
+									"value": "true",
+									"type": "text"
+								}
+							]
 						},
-						{
-							"key": "body",
-							"value": "sticker",
-							"type": "text"
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIText",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "number",
-							"value": "554896459588",
-							"type": "text"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"554896459588\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "externalKey",
-							"value": "externalKeydd211",
-							"type": "text"
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessage Localizacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "sticker",
-							"value": "true",
-							"type": "text"
-						}
-					]
-				},
-				"url": {
-					"raw": "{{base_url}}",
-					"host": [
-						"{{base_url}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIText",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"554896459588\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}",
-					"host": [
-						"{{base_url}}"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessage Localizacao",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"location\",\n    \"longitude\": -27.2842864,\n    \"latitude\": -48.9243959,\n    \"name\": \"Informeurer Informatica\",\n    \"address\": \"R. Nicolau Bado, 219 - Centro, Nova Trento - SC, 88270-000\"\n  }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/location",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"location"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ShowTicketInformation",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\":\"5511999999999\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/showticket",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"showticket"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ShowTicketInformationChatBot",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\":\"554896459588\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/showticketchatbot",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"showticketchatbot"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "ShowAllTicketInformation",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\":\"5511999999999\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/showallticket",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"showallticket"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Set CRM no contato pelo contactId",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"contactId\": 3397,\n    \"crm\": 8\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatecrm",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatecrm"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Set CRM no contato pelo numero ticketid",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"ticketId\": 2881,\n    \"crm\": 19\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatecrm",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatecrm"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Set CRM no contato pelo numero",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": 555135001381,\n    \"crm\": 0\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatecrm",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatecrm"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SetTag no contato pelo numero ticket",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"ticketId\": 3183,\n    \"tags\": []\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatetag",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatetag"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SetTag por contactId",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"contactId\": 3649,\n    \"tags\": [25]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatetag",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatetag"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SetTag por number",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": 555135001381,\n    \"tags\": [25, 26]\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatetag",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatetag"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SetQueue",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"ticketId\": 4,\n    \"queueId\": 1\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/updatequeue",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updatequeue"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageParams",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"params",
-						""
-					],
-					"query": [
-						{
-							"key": "body",
-							"value": "A%20mensagem%20desejadaa"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"location\",\n    \"longitude\": -27.2842864,\n    \"latitude\": -48.9243959,\n    \"name\": \"Informeurer Informatica\",\n    \"address\": \"R. Nicolau Bado, 219 - Centro, Nova Trento - SC, 88270-000\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "number",
-							"value": "5511999999999"
+						"url": {
+							"raw": "{{base_url}}/location",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageParams",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
 						},
-						{
-							"key": "externalKey",
-							"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "bearertoken",
-							"value": "{{token}}"
+						"url": {
+							"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"params",
+								""
+							],
+							"query": [
+								{
+									"key": "body",
+									"value": "A%20mensagem%20desejadaa"
+								},
+								{
+									"key": "number",
+									"value": "5511999999999"
+								},
+								{
+									"key": "externalKey",
+									"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+								},
+								{
+									"key": "bearertoken",
+									"value": "{{token}}"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageParams grupo",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
+					},
+					"response": []
 				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"params",
-						""
-					],
-					"query": [
-						{
-							"key": "body",
-							"value": "A%20mensagem%20desejadaa"
+				{
+					"name": "SendMessageParams grupo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
 						},
-						{
-							"key": "number",
-							"value": "5511999999999"
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
 						},
-						{
-							"key": "externalKey",
-							"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+						"url": {
+							"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"params",
+								""
+							],
+							"query": [
+								{
+									"key": "body",
+									"value": "A%20mensagem%20desejadaa"
+								},
+								{
+									"key": "number",
+									"value": "5511999999999"
+								},
+								{
+									"key": "externalKey",
+									"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+								},
+								{
+									"key": "bearertoken",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "ShowTicketInformation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
 						},
-						{
-							"key": "bearertoken",
-							"value": "{{token}}"
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"5511999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showticket"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "ShowTicketInformationChatBot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"554896459588\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showticketchatbot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showticketchatbot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllTicketInformation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"5511999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showallticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showallticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetQueue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 4,\n    \"queueId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatequeue",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatequeue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTicketInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 1003,\n    \"status\": \"open\",\n    \"userId\": 1,\n    \"queueId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updateticketinfo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updateticketinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588,\n  \"status\": \"pending\",\n  \"queueId\": 4,\n  \"userId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/createticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"createticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar mensagem ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ticket/4990",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ticket",
+								"4990"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "SetTicketInfo",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
+			"name": "Contatos",
+			"item": [
+				{
+					"name": "Set CRM no contato pelo contactId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": 3397,\n    \"crm\": 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"ticketId\": 1003,\n    \"status\": \"open\",\n    \"userId\": 1,\n    \"queueId\": null\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "Set CRM no contato pelo numero ticketid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 2881,\n    \"crm\": 19\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{base_url}}/updateticketinfo",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"updateticketinfo"
-					]
+				{
+					"name": "Set CRM no contato pelo numero",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": 555135001381,\n    \"crm\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag no contato pelo numero ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 3183,\n    \"tags\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag por contactId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": 3649,\n    \"tags\": [25]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag por number",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": 555135001381,\n    \"tags\": [25, 26]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Contato",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"João Silva\",\n  \"number\": \"5511987654321\",\n  \"email\": \"joao.silva@exemplo.com\",\n  \"extraInfo\": [\n    {\n      \"name\": \"Empresa\",\n      \"value\": \"Exemplo Ltda\"\n    }\n  ],\n  \"wallets\": [],\n  \"disableBot\": false,\n  \"disableCampaign\": false,\n  \"commentary\": \"Cliente VIP\",\n  \"deadline\": \"2023-12-31T23:59:59Z\",\n  \"disableKanban\": false,\n  \"kanbanPrice\": \"1500\",\n  \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/createcontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"createcontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contato busca nome",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"5511997654321\",\n    \"name\": \"João Silva\",\n    \"email\": \"joao.silva@exemplo.com\",\n    \"extraInfo\": [\n        {\n            \"name\": \"Empresa\",\n            \"value\": \"Exemplo Ltda\"\n        }\n    ],\n    \"wallets\": [],\n    \"disableBot\": false,\n    \"disableCampaign\": false,\n    \"commentary\": \"Cliente VIP\",\n    \"deadline\": \"2023-12-31T23:59:59Z\",\n    \"disableKanban\": false,\n    \"kanbanPrice\": \"1500\",\n    \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contato buscacontatoid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": \"5219\",\n    \"name\": \"João Silva\",\n    \"email\": \"joao.silva@exemplo.com\",\n    \"extraInfo\": [\n        {\n            \"name\": \"Empresa\",\n            \"value\": \"Exemplo Ltda\"\n        }\n    ],\n    \"wallets\": [],\n    \"disableBot\": false,\n    \"disableCampaign\": false,\n    \"commentary\": \"Cliente VIP\",\n    \"deadline\": \"2023-12-31T23:59:59Z\",\n    \"disableKanban\": false,\n    \"kanbanPrice\": \"1500\",\n    \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Contact Info number",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Contact Info contactid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contactId\": 3397\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validar numero whatsapp",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/valid-whatsapp-number",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"valid-whatsapp-number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por etiqueta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/tag/19",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"tag",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por crm",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/crm/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"crm",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por carteira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/wallet/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"wallet",
+								"3"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Criar Contato",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
+			"name": "ApiOficial",
+			"item": [
+				{
+					"name": "SendMessageAPIOficial botao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\":\n        {\n            \"type\": \"button\",\n            \"body\": {\n                \"text\": \"Texto do Botão\"\n            },\n            \"action\": {\n                \"buttons\": [\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"1\",\n                            \"title\": \"Botão 1\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"2\",\n                            \"title\": \"Botão 2\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"3\",\n                            \"title\": \"Botão 3\"\n                        }\n                    }\n                ]\n            }\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"name\": \"João Silva\",\n  \"number\": \"5511987654321\",\n  \"email\": \"joao.silva@exemplo.com\",\n  \"extraInfo\": [\n    {\n      \"name\": \"Empresa\",\n      \"value\": \"Exemplo Ltda\"\n    }\n  ],\n  \"wallets\": [],\n  \"disableBot\": false,\n  \"disableCampaign\": false,\n  \"commentary\": \"Cliente VIP\",\n  \"deadline\": \"2023-12-31T23:59:59Z\",\n  \"disableKanban\": false,\n  \"kanbanPrice\": \"1500\",\n  \"ignore\": false\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "SendMessageAPIOficial lista",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"list\",\n    \"header\": {\n      \"type\": \"text\",\n      \"text\": \"Título\"\n    },\n    \"body\": {\n      \"text\": \"Descrição\"\n    },\n    \"action\": {\n      \"sections\": [\n        {\n          \"title\": \"Lista 1\",\n          \"rows\": [\n            {\n              \"id\": 1,\n              \"title\": \"Linha 1\",\n              \"description\": \"Descrição da linha 1\"\n            },\n            {\n              \"id\": 2,\n              \"title\": \"Linha 2\",\n              \"description\": \"Descrição da linha 2\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Lista 2\",\n          \"rows\": [\n            {\n              \"id\": 3,\n              \"title\": \"Linha 3\",\n              \"description\": \"Descrição da linha 3\"\n            },\n            {\n              \"id\": 4,\n              \"title\": \"Linha 4\",\n              \"description\": \"Descrição da linha 4\"\n            }\n          ]\n        }\n      ],\n      \"button\": \"Clique aqui\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "{{base_url}}/createcontact",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"createcontact"
-					]
+				{
+					"name": "SendMessageAPIOficial link",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial solicitar localizacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template sem parametros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [{\n            \"type\": \"body\",\n            \"parameters\": []\n        }],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template template com parâmetros (número)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [{\n                    \"type\": \"image\",\n                    \"image\": {\n                        \"link\": \"link_da_imagem\"\n                    }\n                }]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template  template com parâmetros (nome)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [\n                    {\n                        \"type\": \"image\",\n                        \"image\": {\n                            \"link\": \"link_da_imagem\"\n                        }\n                    }\n                ]\n            },\n            {\n                \"type\": \"body\",\n                \"parameters\": [\n                    {\n                        \"type\": \"text\",\n                        \"parameter_name\": \"nome_do_parametro\",\n                        \"text\": \"texto_do_parametro\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "Show Contact Info number",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
+			"name": "Canal",
+			"item": [
+				{
+					"name": "status canal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/statuschannel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"statuschannel"
+							]
 						}
-					]
+					},
+					"response": []
 				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"number\": 554896459588\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+				{
+					"name": "qrcode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"number\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/qrcode",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"qrcode"
+							]
 						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/contact",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"contact"
-					]
+					},
+					"response": []
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "Show Contact Info contactid",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"contactId\": 3397\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/contact",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"contact"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "validar numero whatsapp",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"number\": 554896459588\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/valid-whatsapp-number",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"valid-whatsapp-number"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Criar Ticket",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"number\": 554896459588,\n  \"status\": \"pending\",\n  \"queueId\": 4,\n  \"userId\": null\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/createticket",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"createticket"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "status canal",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/statuschannel",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"statuschannel"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "listar contatos por etiqueta",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/contacts/tag/19",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"contacts",
-						"tag",
-						"19"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "listar contatos por crm",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/contacts/crm/3",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"contacts",
-						"crm",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "listar contatos por carteira",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{base_url}}/contacts/wallet/3",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"contacts",
-						"wallet",
-						"3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial botao",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\":\n        {\n            \"type\": \"button\",\n            \"body\": {\n                \"text\": \"Texto do Botão\"\n            },\n            \"action\": {\n                \"buttons\": [\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"1\",\n                            \"title\": \"Botão 1\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"2\",\n                            \"title\": \"Botão 2\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"3\",\n                            \"title\": \"Botão 3\"\n                        }\n                    }\n                ]\n            }\n        }\n    }",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial lista",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"list\",\n    \"header\": {\n      \"type\": \"text\",\n      \"text\": \"Título\"\n    },\n    \"body\": {\n      \"text\": \"Descrição\"\n    },\n    \"action\": {\n      \"sections\": [\n        {\n          \"title\": \"Lista 1\",\n          \"rows\": [\n            {\n              \"id\": 1,\n              \"title\": \"Linha 1\",\n              \"description\": \"Descrição da linha 1\"\n            },\n            {\n              \"id\": 2,\n              \"title\": \"Linha 2\",\n              \"description\": \"Descrição da linha 2\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Lista 2\",\n          \"rows\": [\n            {\n              \"id\": 3,\n              \"title\": \"Linha 3\",\n              \"description\": \"Descrição da linha 3\"\n            },\n            {\n              \"id\": 4,\n              \"title\": \"Linha 4\",\n              \"description\": \"Descrição da linha 4\"\n            }\n          ]\n        }\n      ],\n      \"button\": \"Clique aqui\"\n    }\n  }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial link",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial solicitar localizacao",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial Template sem parametros",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [{\n            \"type\": \"body\",\n            \"parameters\": []\n        }],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial Template template com parâmetros (número)",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [{\n                    \"type\": \"image\",\n                    \"image\": {\n                        \"link\": \"link_da_imagem\"\n                    }\n                }]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "SendMessageAPIOficial Template  template com parâmetros (nome)",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [\n                    {\n                        \"type\": \"image\",\n                        \"image\": {\n                            \"link\": \"link_da_imagem\"\n                        }\n                    }\n                ]\n            },\n            {\n                \"type\": \"body\",\n                \"parameters\": [\n                    {\n                        \"type\": \"text\",\n                        \"parameter_name\": \"nome_do_parametro\",\n                        \"text\": \"texto_do_parametro\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/apioficial",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"apioficial"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "qrcode",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{token}}",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n  \"number\": null\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{base_url}}/qrcode",
-					"host": [
-						"{{base_url}}"
-					],
-					"path": [
-						"qrcode"
-					]
-				}
-			},
-			"response": []
+			]
 		}
 	],
 	"auth": {
