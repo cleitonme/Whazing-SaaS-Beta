@@ -146,10 +146,12 @@ id: 3
 
 ```bash
 [urlbutton]
-[header]Datas Disponíveis[header]
-[footer]Datas sujeitas a alterações.[footer]
-[buttonText]Ver Datas[buttonText]
-[url]https://www.example.com/dates[url]
+[header]Acessar seu teste[/header]
+[body]Agora so acessar seu teste com email: {{email}} senha: mudar123[/body]
+[footer]Obrigado pelo cadastro.[/footer]
+[buttonText]Acesse agora[/buttonText]
+[url]https://teste.whazing.com.br/[/url]
+
 ```
    
 - Criar solicitar localizacao - api oficial somente
