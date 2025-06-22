@@ -1,6 +1,6 @@
 ## Versão 2.9.4.8 Beta - Changelog - 22-06-2025
 
-- bug - erro integração mercado livre
+- bug - erro integração mercado pago - painel saas
 - update baileys versão com algumas pequenas melhoras @lid
 
 
