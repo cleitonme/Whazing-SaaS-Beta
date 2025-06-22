@@ -1,3 +1,9 @@
+## Versão 2.9.4.8 Beta - Changelog - 22-06-2025
+
+- bug - erro integração mercado livre
+- update baileys versão com algumas pequenas melhoras @lid
+
+
 ## Versão 2.9.4.8 Beta - Changelog
 
 - Endpoint cadastro teste alterado para evitar ataques testes falsos
