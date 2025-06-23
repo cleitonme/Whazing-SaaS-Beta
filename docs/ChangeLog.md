@@ -1,3 +1,7 @@
+## Versão 2.9.4.8 Beta - Changelog - 23-06-2025
+
+- bug - correção bug envio varios arquivos
+
 ## Versão 2.9.4.8 Beta - Changelog - 22-06-2025
 
 - bug - erro integração mercado pago - painel saas
