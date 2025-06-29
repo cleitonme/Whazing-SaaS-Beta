@@ -47,6 +47,6 @@ Em vez de você precisar consultar o Whazing periodicamente para saber se algo m
 
 - [Baixe e importe o exemplo de fluxo compatível com o Whazing](Modelo_Whazing_n8n.json).
 
-- [Baixe e importe o exemplo de fluxo compatível com o Whazing](modelo_com_alguns_endpoints).
+- [Baixe e importe o exemplo de fluxo compatível com o Whazing](modelo_com_alguns_endpoints.json).
 
 Obrigado Elizeu Garcez e Ricardo Schonfelder Filho por compartilhar modelos
