@@ -1,3 +1,9 @@
+## Versão 2.10.1 BETA - Changelog
+
+- Botão agendamento tela atendimento api plus
+- API plus melhora captura mensagens que pode causar perda da mensagem.
+- Validação para busca lid e cadastro caso chega somente numero do contato para garantia melhor concistencia dados
+
 ## Versão 2.10.0 BETA - Changelog
 
 - bug - Correção update crm pelo painel atendimento usuario comum
