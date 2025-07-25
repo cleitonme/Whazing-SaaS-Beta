@@ -1,3 +1,12 @@
+## Versão 2.10.1.1 BETA - Changelog
+
+- api plus - Marcação encaminha mensagens api plus enviadas e recebidas
+- bug - api plus - Correção bug envio mensagem celular contato cadastrado nome errado
+- api baileys - suporte exibir imagem vindo anuncio - identificar anuncio
+- api plus - suporte exibir imagem vindo anuncio - identificar anuncio
+- api plus - melhoria importação contatos captura nome
+- Configuração .env determina tempo expiração token
+
 ## Versão 2.10.1 BETA - Changelog
 
 - Botão agendamento tela atendimento api plus
