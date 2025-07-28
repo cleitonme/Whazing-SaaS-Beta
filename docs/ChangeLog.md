@@ -1,3 +1,15 @@
+## Versão 2.10.1.3 BETA - Changelog
+
+- bug 2.10.1.2 - listagens mensagens atualizar agora se tiver na 2.10.1.2
+
+## Versão 2.10.1.2 BETA - Changelog
+
+- api plus - validação garantir campos necessarios serem preenchidos
+- api plus - Correção mensagens editadas
+- api plus - correção download documentos
+- api plus - contatos recebidos whatsapp web e iphone correção
+- botão download audio
+
 ## Versão 2.10.1.1 BETA - Changelog
 
 - api plus - Marcação encaminha mensagens api plus enviadas e recebidas
