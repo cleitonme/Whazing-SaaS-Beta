@@ -37,7 +37,7 @@ A configuração do fluxo do chatbot é feita através da interface visual abaix
 
 ![print](configfluxo.png)
 
-Na versão 2.10.0, você tem acesso às seguintes interações:
+Na versão 2.11.0, você tem acesso às seguintes interações:
 
 #### Enviar Mensagem
 - Permite inserir o texto que será enviado ao cliente
