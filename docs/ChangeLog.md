@@ -1,7 +1,7 @@
 ## Versão 2.11.1.0 Beta - Changelog
 
 - bug - ao deletar contato retira carteiras dele
-- bug - correção geração conexão por pairing code api plus - caso telefone esteja preenchido somente gera pairing code para voltar gerar deve editar e deixar sem telefone
+- bug - correção geração conexão por pairing code api plus - caso telefone esteja preenchido somente gera pairing code para voltar gerar Qr CODEdeve editar e deixar sem telefone
 
 - Liberado models GPT-5
 - Suporte WebPush (notificação celular) - obrigado Cristian Grando pelo teste no iphone
