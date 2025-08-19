@@ -1,4 +1,19 @@
-## Versão 2.11.1.0 Beta - Changelog
+## Versão 2.11.1.1 Beta - Changelog
+
+💸 Novo Gateway de Pagamentos via Pix
+Cada transação Pix tem taxa fixa de apenas R$ 0,30 – valor definitivo, sem promoções temporárias.
+
+👉 Garanta essa condição exclusiva cadastrando-se no link:
+https://pushinpay.whazing.com.br
+
+https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay
+
+- bug - corrigido filtro relatorio tickets primeira mensagem
+
+- Sugestão instalar PWA tela login
+- Usando botão sair ele desativa login automatico
+
+## Versão 2.11.2.0 Beta - Changelog
 
 - bug - ao deletar contato retira carteiras dele
 - bug - correção geração conexão por pairing code api plus - caso telefone esteja preenchido somente gera pairing code para voltar gerar Qr CODEdeve editar e deixar sem telefone
